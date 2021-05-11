@@ -1,0 +1,4 @@
+# ignore node dependency directories
+node_modules/
+
+.DS_Store
