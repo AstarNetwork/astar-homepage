@@ -1,6 +1,5 @@
 $white: #ffffff;
 $black: #001f40;
-$purple: #a370ff;
 $blue: #1b6dc1;
 $brand: $blue;
 
@@ -135,13 +134,13 @@ h3 {
 }
 
 a {
-  color: $purple;
+  color: $blue;
   transition: color 0.15s ease-in-out;
   img {
     transition: opacity 0.15s ease-in-out;
   }
   &:hover {
-    color: lighten($purple, 10%);
+    color: lighten($blue, 10%);
     img {
       opacity: 0.8;
     }
@@ -156,7 +155,7 @@ a {
     #1b6dc1 65.1%,
     #2ea0c4 100%
   );
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   border: 0;
   color: $white;
   transition: all 0.15s ease-in-out;
@@ -344,12 +343,12 @@ header {
       }
     }
   }
-  dl {
+  .support-status {
     margin-left: 5rem;
     @include media-breakpoint-down(md) {
       margin-left: 0;
     }
-    dd {
+    .support-status__number {
       line-height: 1;
       margin: 0;
       font-size: 6.25rem;
@@ -381,7 +380,7 @@ header {
         }
       }
     }
-    dt {
+    .support-status__label {
       line-height: 1;
       font-size: 1.25rem;
       margin-bottom: 1.5rem;
@@ -558,6 +557,10 @@ header {
   }
 }
 
+#potal.lazy {
+  background-image: none;
+}
+
 #potal {
   min-height: 100vh;
   padding: 7.5rem 0;
@@ -647,6 +650,10 @@ header {
       border-radius: 10px;
     }
   }
+}
+
+#token .token-inner.lazy {
+  background-image: none;
 }
 
 #token {

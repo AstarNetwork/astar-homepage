@@ -301,22 +301,24 @@
                     </div>
                   </div><!-- .support-info -->
                   <div class="support-status text-center text-lg-left">
-                    <dl>
-                      <dd>150K<span class="plus">+</span><span class="eth">ETH</span></dd>
-                      <dt>TVL Through Lockdrops</dt>
-                    </dl>
+                    <div class="support-status__item">
+                      <div class="support-status__number">150K<span class="plus">+</span><span class="eth">ETH</span>
+                      </div>
+                      <div class="support-status__label">TVL Through Lockdrops</div>
+                    </div>
                     <div class="d-sm-flex d-lg-block justify-content-center">
-                      <dl class="mr-sm-5 mr-lg-0">
-                        <dd>10K<span class="plus">+</span></dd>
-                        <dt>Community Members</dt>
-                      </dl>
-                      <dl>
-                        <dd>40<span class="plus">+</span></dd>
-                        <dt>Ecosystem Projects</dt>
-                      </dl>
+                      <div class="support-status__item mr-sm-5 mr-lg-0">
+                        <div class="support-status__number">10K<span class="plus">+</span></div>
+                        <div class="support-status__label"></div>Community Members
+                      </div>
+                    </div>
+                    <div class="support-status__item">
+                      <div class="support-status__number">40<span class="plus">+</span></div>
+                      <div class="support-status__label">Ecosystem Projects</div>
                     </div>
                   </div>
-                </div><!-- .container -->
+                </div>
+              </div><!-- .container -->
               </div><!-- #support -->
 
               <div id="multi-chain">
@@ -337,7 +339,8 @@
               <div id="key-feature">
                 <div class="container">
                   <div class="dapps-staking mb-4 mb-sm-0">
-                    <div class="key-feature-image text-center"><img src="images/dapps-staking-image.png"></div>
+                    <div class="key-feature-image text-center"><img src="images/dapps-staking-image.png"
+                        alt="dApps Staking" loading="lazy"></div>
                     <div class="p-4">
                       <h3>dApps Staking</h3>
                       <p>Earn PLM token by making smart contracts.</p>
@@ -346,7 +349,7 @@
                   <div
                     class="multi-virtul-machine d-sm-flex align-items-center mb-4 mb-sm-0 py-4 px-4 py-sm-4 px-sm-0 py-lg-0 px-lg-0">
                     <div class="key-feature-image text-center text-sm-left mb-3 mb-sm-0"><img
-                        src="images/multi-virtul-machine-image.png"></div>
+                        src="images/multi-virtul-machine-image.png" alt="Multi Virtual Machine" loading="lazy"></div>
                     <div class="key-feature-text">
                       <h3>Multi Virtual Machine</h3>
                       <p class="mb-0">Plasm natively supports Ethereum Virtual Machine and WebAssembly.</p>
@@ -354,7 +357,7 @@
                   </div>
                   <div class="layer2 d-sm-flex align-items-center p-4 p-sm-0">
                     <div class="key-feature-image text-center text-sm-left mb-3 mb-sm-0"><img
-                        src="images/layer2-image.png"></div>
+                        src="images/layer2-image.png" alt="Layer2" loading="lazy"></div>
                     <div class="key-feature-text">
                       <h3>Layer2</h3>
                       <p class="mb-0">Supporting rollups.</p>
@@ -363,7 +366,7 @@
                 </div>
               </div>
 
-              <div id="potal">
+              <div id="potal" class="lazy">
                 <div class="container">
                   <h2 class="text-center mb-3 mb-sm-5"><span>Plasm Network Portal</span></h2>
                   <div class="d-lg-flex align-items-center justify-content-center">
@@ -406,16 +409,16 @@
                     </nav>
                     <div class="portal-capture">
                       <div id="content_1" class="tabcontent">
-                        <img src="images/portal-balance.jpg">
+                        <img src="images/portal-balance.jpg" alt="Balance" loading="lazy">
                       </div>
                       <div id="content_2" class="tabcontent" style="display:none;">
-                        <img src="images/portal-dapps-staking.jpg">
+                        <img src="images/portal-dapps-staking.jpg" alt="dApps Staking" loading="lazy">
                       </div>
                       <div id="content_3" class="tabcontent" style="display:none;">
-                        <img src="images/portal-staking-validators.jpg">
+                        <img src="images/portal-staking-validators.jpg" alt="Staking" loading="lazy">
                       </div>
                       <div id="content_4" class="tabcontent" style="display:none;">
-                        <img src="images/portal-history.jpg">
+                        <img src="images/portal-history.jpg" alt="History" loading="lazy">
                       </div>
                     </div>
                   </div>
@@ -432,14 +435,15 @@
               </div><!-- #potal -->
 
               <div id="token">
-                <div class="token-inner d-flex align-items-center">
+                <div class="token-inner d-flex align-items-center lazy">
                   <div class="container">
                     <h2 class="text-center mb-5"><span>PLM Token</span></h2>
                     <div class="token-list">
 
                       <div class="token-item">
                         <div class="token-item__inner px-4 py-5">
-                          <div class="token-image text-center mb-4"><img src="images/icon-transaction.svg"></div>
+                          <div class="token-image text-center mb-4"><img src="images/icon-transaction.svg"
+                              alt="Transaction" loading="lazy"></div>
                           <h3 class="mb-3">Transaction</h3>
                           <p>Every on-chain transaction takes fees.</p>
                         </div>
@@ -447,7 +451,8 @@
 
                       <div class="token-item">
                         <div class="token-item__inner px-4 py-5">
-                          <div class="token-image text-center mb-4"><img src="images/icon-governance.svg"></div>
+                          <div class="token-image text-center mb-4"><img src="images/icon-governance.svg"
+                              alt="On-Chain Governance" loading="lazy"></div>
                           <h3 class="mb-3">On-Chain Governance</h3>
                           <p>PLM token is used for facilitating the governance activities such as voting and referenda.
                           </p>
@@ -456,7 +461,9 @@
 
                       <div class="token-item">
                         <div class="token-item__inner px-4 py-5">
-                          <div class="token-image text-center mb-4"><img src="images/icon-staking.svg"></div>
+                          <div class="token-image text-center mb-4"><img src="images/icon-staking.svg" alt="Staking"
+                              loading="lazy">
+                          </div>
                           <h3 class="mb-3">Staking</h3>
                           <p>PLM token holders can stake PLM tokens on dApps as well as network. By doing so, the staker
                             can earn PLM tokens</p>
@@ -465,7 +472,9 @@
 
                       <div class="token-item">
                         <div class="token-item__inner px-4 py-5">
-                          <div class="token-image text-center mb-4"><img src="images/icon-layer2.svg"></div>
+                          <div class="token-image text-center mb-4"><img src="images/icon-layer2.svg" alt="Layer2"
+                              loading="lazy">
+                          </div>
                           <h3 class="mb-3">Layer2</h3>
                           <p>Layer2 application developers make a deposit on their layer1 smart contract and create
                             layer2 applications.</p>
@@ -725,7 +734,8 @@
                     </nav>
 
                     <p class="copyright">
-                      <img src="images/plasm-logo-mark.png" alt="Plasm Network" class="plasm-logo__mark mr-2">
+                      <img src="images/plasm-logo-mark.png" alt="Plasm Network" class="plasm-logo__mark mr-2"
+                        loading="lazy">
                       © 2021 Plasm Network. All Rights Reserved.
                     </p>
                   </div>
@@ -772,6 +782,58 @@
                   }
                   document.getElementById(rudr_tab_id).className = 'tabmenu active';
                 }
+              </script>
+
+              <script>
+                // lazyload
+                document.addEventListener("DOMContentLoaded", function () {
+                  var lazyloadImages;
+
+                  if ("IntersectionObserver" in window) {
+                    lazyloadImages = document.querySelectorAll(".lazy");
+                    var imageObserver = new IntersectionObserver(function (entries, observer) {
+                      entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                          var image = entry.target;
+                          image.classList.remove("lazy");
+                          imageObserver.unobserve(image);
+                        }
+                      });
+                    });
+
+                    lazyloadImages.forEach(function (image) {
+                      imageObserver.observe(image);
+                    });
+                  } else {
+                    var lazyloadThrottleTimeout;
+                    lazyloadImages = document.querySelectorAll(".lazy");
+
+                    function lazyload() {
+                      if (lazyloadThrottleTimeout) {
+                        clearTimeout(lazyloadThrottleTimeout);
+                      }
+
+                      lazyloadThrottleTimeout = setTimeout(function () {
+                        var scrollTop = window.pageYOffset;
+                        lazyloadImages.forEach(function (img) {
+                          if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                          }
+                        });
+                        if (lazyloadImages.length == 0) {
+                          document.removeEventListener("scroll", lazyload);
+                          window.removeEventListener("resize", lazyload);
+                          window.removeEventListener("orientationChange", lazyload);
+                        }
+                      }, 20);
+                    }
+
+                    document.addEventListener("scroll", lazyload);
+                    window.addEventListener("resize", lazyload);
+                    window.addEventListener("orientationChange", lazyload);
+                  }
+                })
               </script>
 
               <script src="js/modernizr-webp.js"></script>
