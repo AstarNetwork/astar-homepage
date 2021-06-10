@@ -205,7 +205,7 @@
                     </li>
                   </ul>
 
-                  <div class="d-lg-none mr-2">
+                  <div class="d-lg-none mr-1">
                     <button class="hamburger-button">
                       <span>Nav Button</span>
                     </button>
@@ -259,7 +259,7 @@
               <section id="hero" class="d-flex align-items-center">
                 <div class="container">
                   <div class="hero-inner text-center w-100">
-                    <h1>Multi Chain dApps <br>Hub on Polkadot</h1>
+                    <h1>Multi Chain dApps <br class="d-none d-sm-block">Hub on Polkadot</h1>
                     <p class="my-4 my-md-5">Plasm Network is a multi chain and a multi virtual machine dApps platform
                       powered by Polkadot.
                     </p>
@@ -275,15 +275,15 @@
               </section>
 
               <div id="support" class="d-flex align-items-center">
-                <div class="container d-flex justify-content-center align-items-center">
-                  <div class="support-info">
+                <div class="container d-lg-flex justify-content-center align-items-center">
+                  <div class="support-info mb-5 mb-lg-0">
                     <h2 class="mb-3">Building the premier multi chain smart contract hub supporting:</h2>
-                    <ul class="d-flex">
+                    <ul class="d-flex justify-content-center">
                       <li><span>DeFi</span></li>
                       <li><span>NFTs</span></li>
                       <li><span>DAO</span></li>
                     </ul>
-                    <div class="support-btn mt-4">
+                    <div class="support-btn mt-4 text-center text-lg-left">
                       <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.dusty.plasmnet.io%2F#/explorer"
                         target="_blank" rel="noopener noreferrer" class="btn btn-gradiant btn-lg mr-2">
                         Go to App
@@ -300,14 +300,22 @@
                       </a>
                     </div>
                   </div><!-- .support-info -->
-                  <dl>
-                    <dd>150K<span class="plus">+</span><span class="eth">ETH</span></dd>
-                    <dt>TVL Through Lockdrops</dt>
-                    <dd>10K<span class="plus">+</span></dd>
-                    <dt>Community Members</dt>
-                    <dd>40<span class="plus">+</span></dd>
-                    <dt>Ecosystem Projects</dt>
-                  </dl>
+                  <div class="support-status text-center text-lg-left">
+                    <dl>
+                      <dd>150K<span class="plus">+</span><span class="eth">ETH</span></dd>
+                      <dt>TVL Through Lockdrops</dt>
+                    </dl>
+                    <div class="d-sm-flex d-lg-block justify-content-center">
+                      <dl class="mr-sm-5 mr-lg-0">
+                        <dd>10K<span class="plus">+</span></dd>
+                        <dt>Community Members</dt>
+                      </dl>
+                      <dl>
+                        <dd>40<span class="plus">+</span></dd>
+                        <dt>Ecosystem Projects</dt>
+                      </dl>
+                    </div>
+                  </div>
                 </div><!-- .container -->
               </div><!-- #support -->
 
@@ -319,7 +327,7 @@
                     <p class="pt-4">Plasm Network is a gateway to the multi chain future. We connect multiple layer1
                       blockchains to
                       Polkadot through Plasm Network.</p>
-                    <div class="multi-chain__image">
+                    <div class="multi-chain__image pt-md-5 pt-lg-0 text-right">
                       <img src="images/multi-chain-image.jpg" alt="The Heart of the Multi Chain Future" loading="lazy">
                     </div>
                   </div>
@@ -328,25 +336,28 @@
 
               <div id="key-feature">
                 <div class="container">
-                  <div class="dapps-staking">
+                  <div class="dapps-staking mb-4 mb-sm-0">
                     <div class="key-feature-image text-center"><img src="images/dapps-staking-image.png"></div>
                     <div class="p-4">
                       <h3>dApps Staking</h3>
                       <p>Earn PLM token by making smart contracts.</p>
                     </div>
                   </div>
-                  <div class="multi-virtul-machine d-flex align-items-center">
-                    <div class="key-feature-image"><img src="images/multi-virtul-machine-image.png"></div>
+                  <div
+                    class="multi-virtul-machine d-sm-flex align-items-center mb-4 mb-sm-0 py-4 px-4 py-sm-4 px-sm-0 py-lg-0 px-lg-0">
+                    <div class="key-feature-image text-center text-sm-left mb-3 mb-sm-0"><img
+                        src="images/multi-virtul-machine-image.png"></div>
                     <div class="key-feature-text">
                       <h3>Multi Virtual Machine</h3>
-                      <p>Plasm natively supports Ethereum Virtual Machine and WebAssembly.</p>
+                      <p class="mb-0">Plasm natively supports Ethereum Virtual Machine and WebAssembly.</p>
                     </div>
                   </div>
-                  <div class="layer2 d-flex align-items-center">
-                    <div class="key-feature-image"><img src="images/layer2-image.png"></div>
+                  <div class="layer2 d-sm-flex align-items-center p-4 p-sm-0">
+                    <div class="key-feature-image text-center text-sm-left mb-3 mb-sm-0"><img
+                        src="images/layer2-image.png"></div>
                     <div class="key-feature-text">
                       <h3>Layer2</h3>
-                      <p>Supporting rollups.</p>
+                      <p class="mb-0">Supporting rollups.</p>
                     </div>
                   </div>
                 </div>
@@ -354,16 +365,16 @@
 
               <div id="potal">
                 <div class="container">
-                  <h2 class="text-center mb-5"><span>Plasm Network Portal</span></h2>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <nav class="mr-5">
-                      <ul>
+                  <h2 class="text-center mb-3 mb-sm-5"><span>Plasm Network Portal</span></h2>
+                  <div class="d-lg-flex align-items-center justify-content-center">
+                    <nav class="mr-lg-5">
+                      <ul class="d-flex d-lg-block justify-content-center">
                         <li>
                           <a href="javascript:rudrSwitchTab('tb_1', 'content_1');" class="tabmenu active" id="tb_1">
                             <svg class="icon">
                               <use xlink:href="#icon-balance"></use>
                             </svg>
-                            Balance
+                            <span class="d-none d-sm-inline">Balance</span>
                           </a>
                         </li>
                         <li>
@@ -371,8 +382,8 @@
                             <svg class="icon">
                               <use xlink:href="#icon-dapps-staking"></use>
                             </svg>
-                            dApps
-                            Staking
+                            <span class="d-none d-sm-inline">dApps
+                              Staking</span>
                           </a>
                         </li>
                         <li>
@@ -380,7 +391,7 @@
                             <svg class="icon">
                               <use xlink:href="#icon-staking-validators"></use>
                             </svg>
-                            Staking
+                            <span class="d-none d-sm-inline">Staking</span>
                           </a>
                         </li>
                         <li>
@@ -388,7 +399,7 @@
                             <svg class="icon">
                               <use xlink:href="#icon-history"></use>
                             </svg>
-                            History
+                            <span class="d-none d-sm-inline">History</span>
                           </a>
                         </li>
                       </ul>
