@@ -207,16 +207,25 @@ body {
 }
 
 header {
+  .plasm-logo__container {
+    height: 50px;
+  }
   .plasm-logo {
-    width: 185px;
-    height: 70px;
-    & + span {
-      text-indent: -9999px;
+    // @include media-breakpoint-down(sm) {
+    //   width: calc(185px * 0.8);
+    //   height: calc(70px * 0.8);
+    // }
+    .plasm-logo__mark {
+      width: 50px;
+      margin-right: 10px;
     }
-    @include media-breakpoint-down(sm) {
-      width: calc(185px * 0.8);
-      height: calc(70px * 0.8);
+    .plasm-logo__type {
+      width: calc(126px * 0.9);
+      height: calc(23px * 0.9);
     }
+  }
+  .plasm-logo__title {
+    text-indent: -9999px;
   }
   .nav-item .nav-link {
     color: $black;
@@ -650,6 +659,9 @@ footer {
   .copyright {
     font-size: 0.75rem;
     color: $gray;
+    .plasm-logo__mark {
+      width: 34px;
+    }
   }
   .plasm-logo-mark {
     width: 40px;
