@@ -209,20 +209,20 @@ body {
 }
 
 header {
-  .plasm-logo__container {
+  .brand-logo__container {
     height: 50px;
   }
-  .plasm-logo {
-    .plasm-logo__mark {
+  .brand-logo {
+    .brand-logo__mark {
       width: 50px;
-      margin-right: 10px;
+      margin-right: 5px;
     }
-    .plasm-logo__type {
-      width: calc(126px * 0.9);
-      height: calc(23px * 0.9);
+    .brand-logo__type {
+      width: 86px;
+      height: 32px;
     }
   }
-  .plasm-logo__title {
+  .brand-logo__title {
     text-indent: -9999px;
   }
   .nav-item .nav-link {
@@ -780,13 +780,9 @@ footer {
   .copyright {
     font-size: 0.75rem;
     color: $gray;
-    .plasm-logo__mark {
+    .brand-logo__mark {
       width: 34px;
     }
-  }
-  .plasm-logo-mark {
-    width: 40px;
-    height: 40px;
   }
   .footer-nav a {
     color: $gray;
