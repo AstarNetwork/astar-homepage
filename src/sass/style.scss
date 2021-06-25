@@ -215,11 +215,11 @@ header {
   .brand-logo {
     .brand-logo__mark {
       width: 50px;
-      margin-right: 5px;
+      margin-right: 3px;
     }
     .brand-logo__type {
-      width: 86px;
-      height: 32px;
+      width: calc(231.53px * 0.48);
+      height: calc(53.15px * 0.48);
     }
   }
   .brand-logo__title {
