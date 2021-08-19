@@ -1,0 +1,118 @@
+<footer>
+  <div class="footer-inner">
+    <div class="container pt-5 pb-3">
+      <nav class="d-lg-flex justify-content-between mb-4">
+        <ul class="d-flex flex-wrap footer-nav">
+          <li class="pe-md-4 pe-lg-5 mb-5 footer-nav__item">
+            <p class="font-weight-bold">General</p>
+            <ul>
+              <li><a href="https://stake.co.jp/en/" target="_blank" rel="noopener noreferrer">About</a>
+              </li>
+              <li><a href="https://stake.co.jp/en/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
+              </li>
+              <li><a href="https://angel.co/company/astar-network" target="_blank" rel="noopener noreferrer">Careers</a>
+              </li>
+              <li><a href="https://forum.astar.network/" target="_blank" rel="noopener noreferrer">Team</a></li>
+            </ul>
+          </li>
+          <li class="pe-md-4 pe-lg-5 mb-5 footer-nav__item">
+            <p class="font-weight-bold">Repositories</p>
+            <ul>
+              <li><a href="https://github.com/PlasmNetwork/Plasm" target="_blank" rel="noopener noreferrer">Astar</a>
+              </li>
+              <li><a href="https://github.com/staketechnologies/apps" target="_blank" rel="noopener noreferrer">Astar
+                  Portal Sites</a></li>
+              <li><a href="https://lockdrop.astar.network/#/lock-form" target="_blank" rel="noopener noreferrer">Astar
+                  Lockdrop</a></li>
+              <li><a href="https://docs.astar.network/" target="_blank" rel="noopener noreferrer">Astar
+                  Documentation</a></li>
+              <li><a href="https://github.com/PlasmNetwork/astar-lp" target="_blank" rel="noopener noreferrer">Astar
+                  Homepage</a></li>
+            </ul>
+          </li>
+          <li class="pe-md-4 pe-lg-5 mb-5 footer-nav__item">
+            <p class="font-weight-bold">Community</p>
+            <ul>
+              <li><a href="<%- twitter_url %>" target="_blank" rel="noopener noreferrer">Twitter</a>
+              </li>
+              <li><a href="<%- discord_url %>" target="_blank" rel="noopener noreferrer">Discord</a></li>
+              <li><a href="<%- telegram_url %>" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+              <li><a href="<%- medium_url %>" target="_blank" rel="noopener noreferrer">Medium</a>
+              </li>
+              <li><a href="https://github.com/PlasmNetwork/plasmdocs/blob/master/wp/en.pdf" target="_blank"
+                  rel="noopener noreferrer">Whitepaper</a></li>
+            </ul>
+          </li>
+          <li class="pe-md-4 pe-lg-5 mb-5 footer-nav__item">
+            <p class="font-weight-bold">Collaboration</p>
+            <ul>
+              <li><a href="https://www.substrate.io/builders-program/" target="_blank"
+                  rel="noopener noreferrer">Substrate Builders Program</a></li>
+              <li><a href="https://web3.foundation/grants/" target="_blank" rel="noopener noreferrer">Web3
+                  foundation Grants Program</a></li>
+              <li><a href="https://github.com/PlasmNetwork/growth-program" target="_blank"
+                  rel="noopener noreferrer">Astar Growth Program</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="d-flex social-nav mb-5">
+          <li>
+            <a href="<%- twitter_url %>" target="_blank" rel="noopener noreferrer">
+              <svg class="icon">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+              <span>Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="<%- discord_url %>" target="_blank" rel="noopener noreferrer">
+              <svg class="icon">
+                <use xlink:href="#icon-discord"></use>
+              </svg>
+              <span>Discord</span>
+            </a>
+          </li>
+          <li>
+            <a href="<%- telegram_url %>" target="_blank" rel="noopener noreferrer">
+              <svg class="icon">
+                <use xlink:href="#icon-telegram"></use>
+              </svg>
+              <span>Telegram</span>
+            </a>
+          </li>
+          <li>
+            <a href="<%- medium_url %>" target="_blank" rel="noopener noreferrer">
+              <svg class="icon">
+                <use xlink:href="#icon-medium"></use>
+              </svg>
+              <span>Medium</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/PlasmNetwork/Plasm" target="_blank" rel="noopener noreferrer">
+              <svg class="icon">
+                <use xlink:href="#icon-github"></use>
+              </svg>
+              <span>Github</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">
+        <img src="<%- path %>images/brand-logo-mark.png" alt="<%- title %>" class="brand-logo__mark me-2"
+          loading="lazy">
+        © 2021 <%- title %>. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger nav for mobile/tablet
+  var hamburgerBtn = document.querySelector('.hamburger-button');
+  hamburgerBtn.onclick = function () {
+    document.querySelector('body').classList.toggle("is-open");
+  }
+</script>
+
+<script src="<%- path %>js/modernizr-webp.js"></script>

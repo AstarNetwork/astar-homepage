@@ -1,0 +1,37 @@
+$white: #ffffff;
+$black: #001f40;
+$blue: #1b6dc1;
+$brand: $blue;
+$polkadotPink: #e6007a;
+
+$gray: #e0e0e0;
+
+$primary: $blue;
+$secondary: $black;
+$danger: $polkadotPink;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+);
+
+$link-color: $primary;
+$text-color: $black;
+$title-color: $black;
+
+$body-bg: $white;
+$body-color: $black;
+
+$border-radius: 0.1rem;
+$border-radius-lg: 0.1rem;
+
+$accordion-padding-x: 0;
+$accordion-button-padding-y: 1.75rem;
+$accordion-button-padding-x: 0;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: $black;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-width: 1rem;
+$accordion-icon-color: #9ca3af;
+$accordion-icon-active-color: #9ca3af;

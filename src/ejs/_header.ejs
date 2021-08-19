@@ -1,0 +1,114 @@
+<header class="container">
+  <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+
+    <div class="d-flex align-items-center">
+      <a class="brand-logo__container" href="<%- path %>">
+        <span class="brand-logo d-block">
+          <img src="<%- path %>images/brand-logo-mark.png" alt="<%- title %>" class="brand-logo__mark">
+          <svg class="brand-logo__type">
+            <use xlink:href="#brand-logo-type"></use>
+          </svg>
+        </span>
+        <span class="brand-logo__title d-block">
+          <%- title %>
+        </span>
+      </a>
+    </div>
+
+    <ul class="nav d-none d-lg-flex">
+      <li class="nav-item"><a href="https://shiden.astar.network/" class="nav-link">Shiden
+          Network</a></li>
+      <li class="nav-item"><a href="https://docs.astar.network/" target="_blank" rel="noopener noreferrer"
+          class="nav-link">Docs</a>
+      </li>
+      <li class="nav-item"><a href="<%- path %>builders-program/" class="nav-link">Builders and Grants</a>
+      </li>
+      <li class="nav-item"><a href="https://forum.astar.network/" target="_blank" rel="noopener noreferrer"
+          class="nav-link">Governance</a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown nav-link">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Community
+          </a>
+          <ul class="dropdown-menu m-0" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="<%- twitter_url %>" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </li>
+            <li><a class="dropdown-item" href="<%- discord_url %>" target="_blank" rel="noopener noreferrer">Discord</a>
+            </li>
+            <li><a class="dropdown-item" href="<%- telegram_url %>" target="_blank"
+                rel="noopener noreferrer">Telegram</a></li>
+            <li><a class="dropdown-item" href="<%- medium_url %>" target="_blank" rel="noopener noreferrer">Medium</a>
+            </li>
+            <li><a class="dropdown-item" href="https://github.com/PlasmNetwork/plasmdocs/blob/master/wp/en.pdf"
+                target="_blank" rel="noopener noreferrer">Whitepaper</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.dusty.plasmnet.io%2F#/explorer" target="_blank"
+          rel="noopener noreferrer" class="btn btn-gradiant">
+          Go to App
+          <svg class="icon">
+            <use xlink:href="#icon-arrow-top-right"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="d-lg-none me-1">
+      <button class="hamburger-button">
+        <span>Nav Button</span>
+      </button>
+      <div class="nav-mobile">
+        <div class="nav-mobile__inner d-flex align-items-center justify-content-center">
+          <ul>
+            <li class="nav-item"><a href="https://shiden.astar.network/" class="nav-link">Shiden
+                Network</a>
+            </li>
+            <li class="nav-item"><a href="https://docs.astar.network/" target="_blank" rel="noopener noreferrer"
+                class="nav-link">Docs</a>
+            </li>
+            <li class="nav-item"><a href="<%- path %>builders-program/" class="nav-link">Builders and Grants</a>
+            </li>
+            <li class="nav-item"><a href="https://forum.astar.network/" target="_blank" rel="noopener noreferrer"
+                class="nav-link">Governance</a>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link m-0">Community</p>
+              <ul class="ms-3 mb-4 community">
+                <li class="nav-item"><a href="<%- twitter_url %>" target="_blank" rel="noopener noreferrer"
+                    class="nav-link">Twitter</a></li>
+                <li class="nav-item"><a href="<%- discord_url %>" target="_blank" rel="noopener noreferrer"
+                    class="nav-link">Discord</a>
+                </li>
+                <li class="nav-item"><a href="<%- telegram_url %>" target="_blank" rel="noopener noreferrer"
+                    class="nav-link">Telegram</a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/company/astar-network" target="_blank"
+                    rel="noopener noreferrer" class="nav-link">Linkedin</a></li>
+                <li class="nav-item"><a href="<%- medium_url %>" target="_blank" rel="noopener noreferrer"
+                    class="nav-link">Medium</a>
+                </li>
+                <li class="nav-item"><a href="https://github.com/PlasmNetwork/plasmdocs/blob/master/wp/en.pdf"
+                    target="_blank" rel="noopener noreferrer" class="nav-link">Whitepaper</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.dusty.plasmnet.io%2F#/explorer" target="_blank"
+                rel="noopener noreferrer" class="btn btn-lg btn-light px-5">
+                Go to App
+                <svg class="icon">
+                  <use xlink:href="#icon-arrow-top-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
