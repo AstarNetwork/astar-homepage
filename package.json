@@ -11,11 +11,18 @@
   "author": "",
   "license": "ISC",
   "browserslist": [
-    "last 2 versions",
-    "ie >= 11"
+    ">= 0.5%",
+    "last 2 major versions",
+    "not dead",
+    "Chrome >= 60",
+    "Firefox >= 60",
+    "Firefox ESR",
+    "iOS >= 12",
+    "Safari >= 12",
+    "not Explorer <= 11"
   ],
   "devDependencies": {
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.0.2",
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

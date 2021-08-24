@@ -1,0 +1,252 @@
+/*!
+ * Bootstrap v5.0.2 (https://getbootstrap.com/)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+@import "variables";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  @media (max-width: 991.98px) {
+    max-width: 720px;
+  }
+}
+.container-md {
+  max-width: 720px;
+}
+.container-lg {
+  max-width: 960px;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+  color: $black;
+}
+
+h1 {
+  line-height: 1;
+  font-size: 6.75rem;
+  letter-spacing: -0.15rem;
+  background: linear-gradient(
+    93.07deg,
+    #0f3f70 7.5%,
+    #68316c 24.65%,
+    #0f3f70 43.08%,
+    #001f40 67.09%,
+    #001f40 89.81%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include media-breakpoint-down(lg) {
+    font-size: 5.5rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 2.75rem;
+    letter-spacing: -0.02rem;
+  }
+}
+h2 {
+  span {
+    line-height: 1.15;
+    background: linear-gradient(
+      89.45deg,
+      #0f3f70 1.72%,
+      #68316c 15.64%,
+      #0f3f70 30.16%,
+      #001f40 57.74%,
+      #001f40 97.52%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 4rem;
+    letter-spacing: -0.07rem;
+    @media (max-width: 991.98px) {
+      font-size: 3rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 2.5rem;
+    }
+  }
+}
+h3 {
+  color: $primary;
+  font-size: 1.5rem;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+}
+
+a {
+  color: $blue;
+  transition: color 0.15s ease-in-out;
+  img {
+    transition: opacity 0.15s ease-in-out;
+  }
+  &:hover {
+    color: lighten($blue, 10%);
+    img {
+      opacity: 0.8;
+    }
+  }
+}
+
+.no-webp body {
+  background-image: url(../images/builders-program/hero-bg.jpg);
+}
+.webp body {
+  background-image: url(../images/builders-program/hero-bg.webp);
+}
+
+body {
+  background-size: 1920px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  @include media-breakpoint-down(sm) {
+    background-size: 1300px;
+  }
+}
+
+#hero {
+  height: calc(100vh - 80px);
+  // @media (orientation: landscape) {
+  //   height: calc(100vh - 80px);
+  // }
+  // @media (orientation: portrait) {
+  //   min-height: 80vh;
+  // }
+  p {
+    font-size: 1.375rem;
+    line-height: 1.3;
+    @include media-breakpoint-down(lg) {
+      font-size: 1.25rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 1.125rem;
+    }
+  }
+  .btn-gradiant {
+    padding: 0.75rem 3rem;
+  }
+}
+
+.no-webp #how-work {
+  background-image: url(../images/builders-program/how-work-bg.jpg);
+}
+.webp #how-work {
+  background-image: url(../images/builders-program/how-work-bg.webp);
+}
+
+#how-work {
+  padding: 6rem 0;
+  background-size: cover;
+  h2 span {
+    font-size: 3rem;
+    @include media-breakpoint-down(sm) {
+      font-size: 2.5rem;
+    }
+  }
+  .how-work__image {
+    img {
+      max-width: 780px;
+      width: 100%;
+    }
+  }
+}
+
+.no-webp #apply-program {
+  background-image: url(../images/builders-program/apply-program-bg.jpg);
+}
+.webp #apply-program {
+  background-image: url(../images/builders-program/apply-program-bg.webp);
+}
+
+#apply-program {
+  padding: 7rem 0;
+  background-color: $black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  h2 {
+    span {
+      font-size: 3rem;
+      letter-spacing: 0;
+      background: linear-gradient(
+        90deg,
+        #dcedff 4.44%,
+        #ffe7fa 21.36%,
+        #dcedff 37.78%,
+        #ffffff 53.21%,
+        #ffffff 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include media-breakpoint-down(lg) {
+        font-size: 2.75rem;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 2.25rem;
+      }
+    }
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  .btn {
+    padding: 0.75rem 3rem;
+  }
+}
+
+#what-include {
+  padding: 7.5rem 0;
+  @include media-breakpoint-down(lg) {
+    padding-top: 0;
+  }
+  .why-how__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 4rem;
+    @include media-breakpoint-down(lg) {
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
+    }
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 2rem;
+    }
+  }
+}
+
+#faq {
+  padding: 5rem 0 10rem 0;
+  .accordion-item {
+    border-left: 0;
+    border-right: 0;
+  }
+  .accordion-button {
+    box-shadow: none;
+    font-size: 1.125rem;
+  }
+  .accordion-body {
+    color: #444a51;
+  }
+}

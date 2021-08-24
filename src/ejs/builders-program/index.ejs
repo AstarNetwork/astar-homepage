@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<% const path="../" %>
+  <% const title="Astar Network" %>
+    <% const tagline="Astar & Shiden Builders Program" %>
+      <% const url="https://astar.network" %>
+        <% const description="Join the Astar & Shiden Developer Support Program and scale your Dapp with Polygon!" %>
+          <% const image="https://astar.network/images/builders-program/card-image.jpg" %>
+            <% const twitter_url="https://twitter.com/AstarNetwork" %>
+              <% const discord_url="https://discord.gg/Z3nC9U4" %>
+                <% const telegram_url="https://t.me/PlasmOfficial" %>
+                  <% const medium_url="https://medium.com/astar-network" %>
+
+                    <head>
+                      <!-- Required meta tags -->
+                      <meta charset="utf-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1">
+                      <meta name="robots" content="index, follow">
+
+                      <!-- Google Fonts -->
+                      <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" class="webfont">
+
+                      <!-- Bootstrapped CSS -->
+                      <link href="<%- path %>css/style.css" rel="stylesheet">
+                      <link href="<%- path %>css/builders-program.css" rel="stylesheet">
+
+                      <title>
+                        <%= title %> - <%= tagline %>
+                      </title>
+                      <meta name="description" content="<%= description %>">
+
+                      <!-- Open Graph Tags -->
+                      <meta property="og:title" content="<%= title %> - <%= tagline %>" />
+                      <meta property="og:type" content="website" />
+                      <meta property="og:image" content="<%= image %>" />
+                      <meta property="og:description" content="<%= description %>" />
+                      <meta property="og:locale" content="en-US" />
+                      <meta property="og:site_name" content="<%= title %>" />
+                      <meta property="og:url" content="<%= url %>" />
+
+                      <!-- Twitter Cards -->
+                      <meta name="twitter:card" content="summary_large_image">
+                      <meta name="twitter:site" content="@AstarNetwork">
+                      <meta name="twitter:title" content="<%= title %> - <%= tagline %>">
+                      <meta name="twitter:description" content="<%= description %>">
+                      <meta name="twitter:image" content="<%= image %>">
+                      <meta property="twitter:url" content="<%= url %>" />
+                      <meta name="twitter:creator" content="@AstarNetwork">
+
+                      <!-- Favicon -->
+                      <link rel="apple-touch-icon" sizes="180x180"
+                        href="<%- path %>images/favicon/apple-touch-icon.png">
+                      <link rel="icon" type="image/png" sizes="32x32"
+                        href="<%- path %>images/favicon/favicon-32x32.png">
+                      <link rel="icon" type="image/png" sizes="16x16"
+                        href="<%- path %>images/favicon/favicon-16x16.png">
+                      <link rel="manifest" href="<%- path %>images/favicon/site.webmanifest">
+                      <link rel="mask-icon" href="<%- path %>images/favicon/safari-pinned-tab.svg" color="#1b6dc1">
+                      <meta name="msapplication-TileColor" content="#ffffff">
+                      <meta name="theme-color" content="#ffffff">
+                    </head>
+
+                    <body>
+                      <%- include('../_svg-defs'); %>
+
+                        <%- include('../_header', {title: title, twitter_url: twitter_url, discord_url: discord_url,
+                          telegram_url: telegram_url, medium_url: medium_url, path: path}); %>
+
+                          <section id="hero" class="d-flex align-items-center">
+                            <div class="container">
+                              <div class="hero-inner ps-lg-4 text-center">
+                                <h1 class="mb-4 mb-sm-5">Astar <small>&</small> Shiden <br>Builders Program</h1>
+                                <p class="mb-5 fw-bolder">Join the Astar & Shiden Builders Program and scale your Dapp
+                                  and Infrastructure!
+                                </p>
+                                <a class="btn btn-gradiant btn-lg"
+                                  href="https://share.hsforms.com/16d-UU2MuQtmKNeuH82-znwc2ryh" target="_blank"
+                                  rel="noopener noreferrer">
+                                  Apply Now
+                                </a>
+                              </div>
+                            </div>
+                          </section><!-- #hero -->
+
+
+                          <section id="what-include">
+                            <div class="container-lg">
+                              <h2 class="text-center mb-3 mb-sm-5"><span>What does Builders Program Include?</span>
+                              </h2>
+                              <div class="why-how__grid pt-4">
+                                <div>
+                                  <div class="mb-4 text-center"><img
+                                      src="<%- path %>images/builders-program/icon-grants.svg" alt="Early build grants">
+                                  </div>
+                                  <h3 class="fw-bold mb-3">Early build grants</h3>
+                                  <p>Support in helping your project navigate the Astar and Shiden Network Treasury and
+                                    Grants processes.
+                                  </p>
+                                </div>
+                                <div>
+                                  <div class="mb-4 text-center"><img
+                                      src="<%- path %>images/builders-program/icon-marketing.svg"
+                                      alt="Marketing Support">
+                                  </div>
+                                  <h3 class="fw-bold mb-3">Marketing Support</h3>
+                                  <p>Introductions to relevant blockchain ecosystem players and joint announcements.</p>
+                                </div>
+                                <div>
+                                  <div class="mb-4 text-center"><img
+                                      src="<%- path %>images/builders-program/icon-technical.svg"
+                                      alt="Technical Support">
+                                  </div>
+                                  <h3 class="fw-bold mb-3">Technical Support</h3>
+                                  <p>Category-specific chat support with other program members of the same category and
+                                    category-expert engineers to collaborate and ask questions.</p>
+                                </div>
+                                <div>
+                                  <div class="mb-4 text-center"><img
+                                      src="<%- path %>images/builders-program/icon-connecting.svg"
+                                      alt="Connecting with investors and ecosystem supporters">
+                                  </div>
+                                  <h3 class="fw-bold mb-3">Connecting with investors and ecosystem supporters</h3>
+                                  <p>Introductions to Astar and Shiden ecosystem investors and accelerators.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </section><!-- #what-include -->
+
+
+                          <section id="how-work">
+                            <div>
+                              <h2 class="text-center mb-3 mb-sm-5"><span>How Does The Program Work?</span>
+                              </h2>
+                              <div class="how-work__image text-center"><img
+                                  src="<%- path %>images/builders-program/how-work-image.png" alt="Work flow image">
+                              </div>
+                            </div>
+                          </section>
+
+
+                          <section id="apply-program">
+                            <div class="container text-center">
+                              <h2 class="mb-4"><span>Apply for Astar & Shiden <br>Builders Program</span></h2>
+                              <p class="text-white mb-5">Leverage Astar & Shiden’s experience and incredible
+                                technologies</p>
+                              <a class="btn btn-gradiant-light btn-lg fw-bold"
+                                href="https://share.hsforms.com/16d-UU2MuQtmKNeuH82-znwc2ryh" target="_blank"
+                                rel="noopener noreferrer">
+                                Apply Now
+                              </a>
+                            </div>
+                          </section><!-- #apply-program -->
+
+
+                          <section id="faq">
+                            <div class="container-md">
+                              <h2 class="text-center mb-3 mb-sm-5"><span>FAQ</span></h2>
+                              <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      What is Builders for Builders Program?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      Builders for Builders is a new initiative that aims to empower teams building
+                                      Substrate-based parachains to develop and grow their own ecosystem of builders
+                                      developing on top of their parachain. As part of the Builders for Builders
+                                      initiative, the Substrate Builders Program team will share best practices gained
+                                      from running the SBP for over a year now to help parachain teams build their own
+                                      similar programs for teams building solutions on top of their parachain. These
+                                      programs, called Parachain Builders Programs (PBP) will allow parachain teams to
+                                      become mentors to others and develop their own thriving community of builders,
+                                      enriching the Polkadot ecosystem as a whole.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      When will the Builders Program commence and how long will it run for?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      The Builders Programs for both Astar Network and Shiden Network will go live soon
+                                      after winning their respective parachain auctions i.e. Polkadot for Astar and
+                                      Kusama for Shiden. We accept applications all year round.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                      data-bs-target="#collapseThree" aria-expanded="false"
+                                      aria-controls="collapseThree">
+                                      What is the difference between Astar Network and Shiden Network?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      Shiden is to Astar what Kusama is to Polkadot. Shiden is our canary network.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                      Is this Builders Program for Astar Network or Shiden Network?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      The Builders Program is for both networks. Once we win the Kusama parachain
+                                      auction, we will go live with Builders Program for Shiden Network. Subsequently,
+                                      when we have acquired a slot on the Polkadot parachain, we will accept
+                                      applications for Astar Network.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                      Are there any application fees?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      No. The program is for free.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                      Who is in the Builders Program Committee?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      The Builders Program currently consists of 8 members, 4 from the Astar team and 4
+                                      ambassadors from our community. These 8 individuals will pull together their
+                                      unique skillset and experiences to perform a comprehensive evaluation of your
+                                      application. Note that if a consensus cannot be reached, the default behaviour is
+                                      to reject the application.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section><!-- #faq -->
+
+                          <%- include('../_footer', {title: title, twitter_url: twitter_url, discord_url: discord_url,
+                            telegram_url: telegram_url, medium_url: medium_url, path: path}); %>
+
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                              integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                              crossorigin="anonymous"></script>
+                    </body>
+
+</html>
