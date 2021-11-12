@@ -33,6 +33,10 @@ body {
   }
 }
 
+#crowdloan-campaign {
+  background: linear-gradient(83.83deg,#694ea4,#1b6dc1 37.5%,#1b6dc1 65.1%,#2ea0c4); color: #FFF; height: 40px; text-align: center; padding-top: 7px;
+}
+
 #hero {
   @media (orientation: landscape) {
     min-height: calc(100vh - 90px);
