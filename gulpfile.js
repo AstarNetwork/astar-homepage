@@ -1,23 +1,27 @@
-const { src, dest, parallel, watch } = require("gulp");
-const sass = require("gulp-sass");
-const autoprefixer = require("gulp-autoprefixer");
-const changed = require("gulp-changed");
-const imagemin = require("gulp-imagemin");
-const imageminJpg = require("imagemin-jpeg-recompress");
-const imageminPng = require("imagemin-pngquant");
-const imageminGif = require("imagemin-gifsicle");
-const rename = require("gulp-rename");
+import pkg from "gulp";
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+import autoprefixer from "gulp-autoprefixer";
+import changed from "gulp-changed";
+import imagemin from "gulp-imagemin";
+import imageminJpg from "imagemin-jpeg-recompress";
+import imageminPng from "imagemin-pngquant";
+import imageminGif from "imagemin-gifsicle";
+import rename from "gulp-rename";
 // const header = require("gulp-header");
 // const footer = require("gulp-footer");
-const ejs = require("gulp-ejs");
-const browserSync = require("browser-sync").create();
+import ejs from "gulp-ejs";
+import browserSync from "browser-sync";
+
+const sass = gulpSass(dartSass);
+const { src, dest, parallel, watch } = pkg;
 
 const html = () =>
   src(["src/ejs/**/*.ejs", "!" + "src/ejs/**/_*.ejs"])
     .pipe(ejs({}, {}, { ext: ".html" }))
     .pipe(rename({ extname: ".html" }))
     .pipe(dest("./docs"))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.create().stream());
 
 const CSS = () =>
   src("./src/sass/**/*.scss")
@@ -58,8 +62,11 @@ watch("./src/images/**/*.+(jpg|jpeg|png|gif)", image);
 watch("./src/ejs/**/*.ejs", html);
 watch("./docs/**/*").on("change", browserSync.reload);
 
-exports.html = html;
-exports.CSS = CSS;
-exports.image = image;
-exports.watchFiles = watchFiles;
-exports.default = parallel(html, CSS, image, watchFiles);
+// exports.html = html;
+// exports.CSS = CSS;
+// exports.image = image;
+// exports.watchFiles = watchFiles;
+// exports.default = parallel(html, CSS, image, watchFiles);
+
+export { html, CSS, image, watchFiles };
+export default parallel(html, CSS, image, watchFiles);

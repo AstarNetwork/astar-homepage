@@ -11,6 +11,7 @@
               <% const discord_url="https://discord.gg/Z3nC9U4" %>
                 <% const telegram_url="https://t.me/PlasmOfficial" %>
                   <% const medium_url="https://medium.com/astar-network" %>
+                  <% const app_url="https://portal.astar.network" %>
 
                     <head>
                       <!-- Required meta tags -->
@@ -65,7 +66,7 @@
                       <%- include('../_svg-defs'); %>
 
                         <%- include('../_header', {title: title, twitter_url: twitter_url, discord_url: discord_url,
-                          telegram_url: telegram_url, medium_url: medium_url, path: path}); %>
+                          telegram_url: telegram_url, medium_url: medium_url, app_url: app_url, path: path}); %>
 
                           <section id="hero" class="d-flex align-items-center">
                             <div class="container">
@@ -161,21 +162,16 @@
                                   <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                       data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      What is Builders for Builders Program?
+                                      What is the Builders Program?
                                     </button>
                                   </h2>
                                   <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                      Builders for Builders is a new initiative that aims to empower teams building
-                                      Substrate-based parachains to develop and grow their own ecosystem of builders
-                                      developing on top of their parachain. As part of the Builders for Builders
-                                      initiative, the Substrate Builders Program team will share best practices gained
-                                      from running the SBP for over a year now to help parachain teams build their own
-                                      similar programs for teams building solutions on top of their parachain. These
-                                      programs, called Parachain Builders Programs (PBP) will allow parachain teams to
-                                      become mentors to others and develop their own thriving community of builders,
-                                      enriching the Polkadot ecosystem as a whole.
+                                      The Astar / Shiden Network Builders Program was created to help further the
+                                      development, growth, and adoption of our ecosystem by supporting teams who are
+                                      building on it. The program is operated by Stake Technologies with guidance from
+                                      Parity Technologies under the Builders for Builders initiative.
                                     </div>
                                   </div>
                                 </div>
@@ -264,7 +260,7 @@
                           </section><!-- #faq -->
 
                           <%- include('../_footer', {title: title, twitter_url: twitter_url, discord_url: discord_url,
-                            telegram_url: telegram_url, medium_url: medium_url, path: path}); %>
+                            telegram_url: telegram_url, medium_url: medium_url, app_url: app_url, path: path}); %>
 
                             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
                               integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
