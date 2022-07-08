@@ -6,6 +6,11 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [{
+      "source": "/builders-program",
+      "destination": "/spacelabs",
+      "type": 301
+    }],
     "rewrites": [
       {
         "source": "**",
