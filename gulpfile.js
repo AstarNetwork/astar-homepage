@@ -53,6 +53,9 @@ const watchFiles = () =>
   browserSync.init({
     server: {
       baseDir: "./docs",
+      routes: {
+        '/builders-program': './docs/spacelabs/index.html'
+      }
     },
     // open: "external",
     // host: "192.168.0.22",
